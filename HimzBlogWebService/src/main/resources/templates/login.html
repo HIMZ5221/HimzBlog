@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container-login {
+        	height : 100%;
+            background-color: #1E4174;
+        }
+
+        #login-form {
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            padding: 285px 0px;
+        }
+
+        #loginlogo {
+            margin-left: 70px;
+        }
+
+        #login-form td {
+            color: rgba(255, 255, 255, 0.75);
+            padding: 5px 10px;
+            font-family: 'MaruBuri';
+            text-align: center;
+        }
+
+        #loginBtn {
+            font-family: 'MaruBuri';
+            color: #1E4174;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #notlogin {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.45);
+            margin: 10px 10px 0px 155px;
+            text-decoration: none;
+            padding-top : 20px;
+        }
+
+        #notlogin:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-login">
+        <form th:action="|${#request.contextPath}/login|" method="post" id="login-form">
+            <img src="assets/img/logo2.png" id="loginlogo">
+            <table>
+                <tr>
+                    <td>사원번호</td>
+                    <td><input type="text" id="empId" name="empId"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" id="empPw" name="password" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="btn btn-light" id="loginBtn">로그인</button></td>
+                </tr>
+            </table>
+            <a id="notlogin" href="/work/workKiosk">작업 키오스크로 이동</a>
+        </form>
+    </div>
+</body>
+
+</html>
