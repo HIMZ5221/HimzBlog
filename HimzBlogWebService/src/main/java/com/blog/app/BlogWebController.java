@@ -12,11 +12,11 @@ public class BlogWebController {
 	
 	@GetMapping("mainPage")
 	public String mainPage() {
-		return "/home/profile";
+		return "home/profile";
 	}
 	
 	@GetMapping("email")
 	public String email() {
-		return "/home/email";
+		return "home/email";
 	}
 }
