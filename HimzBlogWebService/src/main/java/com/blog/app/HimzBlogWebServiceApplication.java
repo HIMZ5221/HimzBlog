@@ -17,7 +17,7 @@ public class HimzBlogWebServiceApplication {
 	
 	@GetMapping("/")
 	public String login1() {
-		return "login";
+		return "/home/profile";
 	}
 	@GetMapping("/login")
 	public String login2() {
