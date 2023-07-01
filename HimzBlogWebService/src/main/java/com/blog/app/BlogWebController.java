@@ -7,15 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/home/")
+@RequestMapping("/home")
 public class BlogWebController {
 	
-	@GetMapping("mainPage")
+	//linux 기반에서는 return 맨 앞에 / 을 붙히면 인식못한다
+	
+	@GetMapping("/mainPage")
 	public String mainPage() {
 		return "home/profile";
 	}
 	
-	@GetMapping("email")
+	@GetMapping("/email")
 	public String email() {
 		return "home/email";
 	}
