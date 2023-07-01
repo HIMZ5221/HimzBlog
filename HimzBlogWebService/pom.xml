@@ -9,11 +9,11 @@
 		<version>2.7.10</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>co.sixsu</groupId>
-	<artifactId>sixsu</artifactId>
+	<groupId>com.blog</groupId>
+	<artifactId>blog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sixsu</name>
-	<description>saengsu MES</description>
+	<name>blog</name>
+	<description>himz BLOG</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
